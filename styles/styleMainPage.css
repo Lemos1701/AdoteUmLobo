@@ -1,0 +1,141 @@
+/******** GLOBAL ********/
+.darker-grotesque {
+  font-family: "Darker Grotesque", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+    font-family: "Darker Grotesque", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+button:hover {
+    cursor: pointer;
+}
+/******** BODY ********/
+
+/*** HEADER ***/
+
+div.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    height: 12%;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb( 133, 205, 245);
+
+}
+
+div.header img {
+    position: relative;
+    width: 5%;
+    height: 90%;
+
+}
+
+div.header div {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    top: 16%;
+}
+
+div.header hr {
+    position: relative;
+    width: 65%;
+    left: 20%;
+    bottom: 1vh;
+    height: 0.45vh;
+    background-color: rgb(51, 51, 51);
+    border: 0px;
+    border-radius: 40px;
+}
+/*** MAIN ***/
+
+
+
+/*** FOOTER ***/
+
+div.footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    height: 40%;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+div.contato {
+    display: flex;
+    position: relative;
+    flex-flow: nowrap column;
+    align-items: flex-start;
+    color: white;
+    top: 17%;
+    width: 27%;
+    gap: 1.75vmax;
+    font-size: 1.25rem;
+    justify-content: start;
+}
+
+div.contato div {
+    display: flex;
+    position: relative;
+    flex-flow: nowrap row;
+    gap: 1vmax;
+    align-items: center;
+}
+
+img#point {
+    width: 7%;
+    height: 60%;
+}
+
+img#telefone {
+    width: 10%;
+}
+
+img#carta {
+    width: 8%;
+    height: 80%;
+}
+
+div.contato button {
+    position: relative;
+    border: 0px;
+    top: 3.5%;
+    background-color: rgba(222,185,89,255);
+    color: rgb(51, 51, 51);
+    font-size: 1.25rem;
+    height: 10%;
+    width: 36%;
+}
+
+div.desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    position: relative;
+    top: 18%;
+    color: white;
+    font-size: 1.25rem;
+}
+
+
+
+div.footer iframe {
+    position: relative;
+    align-self: center;
+    width: 20%;
+    height: 70%;
+}
