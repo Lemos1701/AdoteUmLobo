@@ -35,6 +35,7 @@ button_adote.addEventListener("click",()=>{
         inputName.value = "";
         inputYear_old.value = "";
         inputEmail.value = "";
+        alert("Parabens, " + nome + "! voce adotou um lobo")
         console.log(objeto.idNumber);
     }
 });
