@@ -1,5 +1,12 @@
 var actual = 1
 
+const listaLobo = localStorage.getItem("lobinhos")
+console.log(listaLobo)
+if (listaLobo) {
+    var lobinhos = JSON.parse(listaLobo);
+    console.log(lobinhos);
+}
+
 function readData(number, status){
   if (status) {
     lobosFiltrados = lobinhos.filter((lobo) => {return lobo.adotado});

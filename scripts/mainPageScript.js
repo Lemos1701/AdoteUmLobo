@@ -4,6 +4,18 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+const objetoComoString = JSON.stringify(lobos);
+localStorage.setItem("lobinhos", objetoComoString)
+let listaLobos = localStorage.getItem("lobinhos")
+console.log(listaLobos)
+if (listaLobos) {
+    var lobinhos = JSON.parse(listaLobos);
+    console.log(lobinhos);
+}
+
+localStorage.setItem("idMin", 1000)
+
+console.log(lobinhos)
 let newLobo1 = lobinhos[getRandomInt(1, 1000) - 1];
 let newLobo2 = lobinhos[getRandomInt(1, 1000) - 1];
 

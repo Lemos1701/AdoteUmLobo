@@ -10,5 +10,19 @@ document.getElementById("adote").addEventListener("click", function() {
 });
 
 document.getElementById("exclude").addEventListener("click", function() {
+    var listaDeLobos = localStorage.getItem("lobinhos")
+    if (listaDeLobos) {
+        var lobinhos = JSON.parse(listaDeLobos);
+        console.log(lobinhos);
+    }
+    let loboes = lobinhos.filter((lobo)=>{
+        if (lobo.id == localStorage.getItem("id"+idNum)){
+            return false
+        }
+        return true
+    })
+    console.log(loboes)
+    const objetoComoString = JSON.stringify(loboes);
+    localStorage.setItem("lobinhos", objetoComoString)
     window.location.href = "../html/listLobinhos.html"
 })
