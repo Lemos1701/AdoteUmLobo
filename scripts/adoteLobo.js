@@ -1,19 +1,19 @@
 const objeto = lobinhos;
 let button_adote = document.querySelector(".btnAdopt");
 
-let imagemLobo = document.querySelector(".imgLobo");
-
 let id = localStorage.getItem("id");
+document.querySelector(".imgLobo").src = localStorage.getItem("imagem");
+document.querySelector("#beginTextTitle").innerHTML = "Adote o(a) " + localStorage.getItem("nome");
 
 let idNumber = Number(id);
-console.log(objeto.idNumber);
 
 function encontrarLoboPorId(id) {
     return objeto.filter(lobo => lobo.id === id);
 }
 
 let loboEncontrado1 = encontrarLoboPorId(idNumber);
-imagemLobo.src = loboEncontrado1.imagem;
+
+console.log(loboEncontrado1);
 
 function cadastro() {
     let loboEncontrado = encontrarLoboPorId(idNumber);
