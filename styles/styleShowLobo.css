@@ -180,61 +180,66 @@ div.imgShadow {
 
 /*** FOOTER ***/
 
+/*** FOOTER ***/
 div.footer {
-    position: absolute;
+    top: 60%;
+    position: relative;
     display: flex;
-    justify-content: space-around;
-    height: 30%;
+    justify-content: space-evenly;
+    height: 30vh;
     min-height: 30vh;
     width: 100%;
     background-color: rgb(51, 51, 51);
-    bottom: 0;
-    z-index: 2;
+}
+
+div.leftFooter {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    gap: 5vh;
+}
+
+iframe {
+    height: 25vh;
 }
 
 div.contato {
     display: flex;
-    position: relative;
-    flex-flow: nowrap column;
-    align-items: flex-start;
+    flex-direction: column;
     color: white;
-    top: 17%;
-    width: 27%;
-    gap: 1.5vmax;
-    font-size: 1.25rem;
-    justify-content: start;
-    height: 210px;
+    gap: 3.5vh;
+    height: 25vh;
+    font-size: 1.1rem;
 }
 
 div.contato div {
+    width: 65vh;
     display: flex;
-    position: relative;
     flex-flow: nowrap row;
     gap: 1vmax;
     align-items: center;
 }
 
 img#point {
-    width: 7%;
-    height: 60%;
+    width: 5%;
+    height: 50%;
 }
 
 img#telefone {
-    width: 10%;
+    width: 4%;
 }
 
 img#carta {
-    width: 8%;
+    width: 4%;
     height: 80%;
 }
 
 div.contato button {
-    position: relative;
     border: 0px;
     background-color: rgba(222,185,89,255);
     color: rgb(51, 51, 51);
     font-size: 1.25rem;
-    height: 10%;
+    height: 30%;
     width: 36%;
 }
 
@@ -242,18 +247,12 @@ div.desenvolvedor {
     display: flex;
     flex-direction: column;
     gap: 1vmax;
-    position: relative;
-    top: 18%;
     color: white;
-    font-size: 1.25rem;
-    height: 210px;
+    font-size: 1.1rem;
+    justify-content: center;
 }
 
-
-
-div.footer iframe {
-    position: relative;
-    align-self: center;
-    width: 20%;
-    height: 70%;
+div.desenvolvedor img {
+    width: 20vh;
+    height: 20vh;
 }
