@@ -3,69 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/assets/lobo.png" type="image/x-icon">
-    <link rel="stylesheet" href="/styles/Reset.css">
-    <link rel="stylesheet" href="/styles/styleAddLobo.css">
+    <link rel="shortcut icon" href="../assets/lobo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/Reset.css">
+    <link rel="stylesheet" href="../styles/styleAddLobo.css">
     <title>Adote Um Lobo</title>
 </head>
 <body>
     <header>
         <div class="header">
-            <a href="">Nossos Lobinhos</a>
-            <img src="" alt="">
-            <a href="">Quem somos</a>
+            <a href="../html/listLobinhos.html">Nossos Lobinhos</a>
+            <img src="../assets/lobinhoHeader.png">
+            <div>
+                <a href="../html/quemSomos.html">Quem somos</a>
+                <hr>
+            </div>
         </div>
     </header>
+
+
     <main>
-        <fieldset>
-            <h1></h1>
-            <div>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required>
+        <fieldset class="fieldset">
+            <h1 id="fieldsetTitle">Coloque um Lobinho para doação</h1>
+            <div class="divData">
+                <div class="name">
+                    <label for="name" id="labelName" >Nome do Lobinho:</label><br>
+                    <input type="text" id="inputName" name="nome" required>
+                </div>
+                <div class="year">
+                    <label for="idade" id="labelYear">Anos:</label><br>
+                    <input type="text" id="inputYear" name="year" required>
+                </div>
+            
             </div>
-            <div>
-                <label for="nome">Nome:</label><br>
-                <input type="text" id="nome" name="nome" required>
+            <div class="link">
+                <label for="nome" id="labelLink">Link da foto:</label><br>
+                <input type="text" id="inputLink" name="link" required>
             </div>
-            <div>
-                <label for="nome">Nome:</label><br>
-                <textarea name="" id=""></textarea>
+            <div class="description">
+                <label for="nome" id="labelDesciption">descrição:</label><br>
+                <textarea name="" id="textareaDescription"></textarea>
                 <!--recise: none;-->
             </div>
-            <button>Salvar</button>
+            <button class="btnSave">Salvar</button>
         </fieldset>
     </main>
+
+
     <footer>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.748758476153!2d-43.1332602!3d-22.9064655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sInstitute%20of%20Computing%20-%20UFF!5e0!3m2!1sen!2sbr!4v1721684716845!5m2!1sen!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div>
-                <div>
-                    <img src="" alt="">
-                    <p></p>
-                </div>
-                <div>
-                    <div>
-                        <div></div>
-                        <img src="" alt="">
+        <div class="footer">
+            <div class="information">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14700.748758476153!2d-43.1332602!3d-22.9064655!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x99817e444e692b%3A0xfd5e35fb577af2f5!2sInstitute%20of%20Computing%20-%20UFF!5e0!3m2!1sen!2sbr!4v1721684716845!5m2!1sen!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div class="contato">
+                    <div class="adress">
+                        <img src="../assets/point.png" id="adressImg">
+                        <p id="adressText">Av. Milton Tavares de Souza, s/n - Sala 115 B - Boa Viagem, Niterói - RJ, 24210-315</p>
                     </div>
-                    <p></p>
-                </div>
-                <div>
-                    <p></p>
-                    <div>
-                        <div></div>
-                        <img src="" alt="">
+                    <div class="telefone"> 
+                        <img src="../assets/telefone.png" id="telefoneImg">
+                        <p id="telefoneNumber">(99) 99999-9999</p>
                     </div>
+    
+                    <div class="contatoE">
+                        <img src="../assets/carta.png" id="emailImg">
+                        <p id="emailText">salve-lobos@lobINhos.com</p>
+                    </div>
+                    <button class="btnContato">
+                        Quem somos
+                    </button>
                 </div>
-                <button>
-                    Quem somos
-                </button>
+                
             </div>
-            <div>
-                <p></p>
-                <img src="" alt="">
+            <div class="desenvolvedor">
+                <p>Desenvolvido com</p>
+                <img src="../assets/pawspata.png" alt="">
             </div>
         </div>
     </footer>
