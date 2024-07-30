@@ -273,10 +273,19 @@ div.adoteLobo {
     justify-content: space-around;
 }
 
-div.adoteLobo button {
+button.adotar {
     width:20%;
     height: 4.5vh;
     background-color: rgb(222,185,89);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-size: 1.25rem;
+}
+
+button.adotados {
+    width:20%;
+    height: 4.5vh;
+    background-color: rgba(122,172,58);
     color: rgb(255, 255, 255);
     border: none;
     font-size: 1.25rem;
