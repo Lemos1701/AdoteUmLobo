@@ -1,0 +1,258 @@
+/******** GLOBAL ********/
+.darker-grotesque {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+
+html {
+    height: 100%
+}
+
+body {
+    font-family: "Darker Grotesque", sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+main {
+    display: flex;
+    height: calc(100vh - 10vh - 30%);
+    align-items: center;
+    flex-direction: column;
+}
+
+/******** BODY ********/
+
+/*** HEADER ***/
+
+div.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb( 133, 205, 245);
+}
+
+div.header img {
+    position: relative;
+    width: 4%;
+    height: 70%;
+    right: 1%;
+}
+
+div.header div {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    top: 16%;
+}
+
+div.header hr {
+    position: relative;
+    width: 65%;
+    left: 20%;
+    bottom: 1vh;
+    height: 0.45vh;
+    background-color: rgb(51, 51, 51);
+    border: 0px;
+    border-radius: 40px;
+}
+/*** MAIN ***/
+
+div.loboEspecs {
+    display: flex;
+    height: 100%;
+}
+
+div.adoteLobo {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+div.textLobo {
+    width: 40%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: "Darker Grotesque", sans-serif;
+    overflow: auto;
+}
+
+div.textLobo p{
+    display: flex;
+    flex-flow: wrap row;
+
+}
+
+div.imgLobo {
+    display: flex;
+    justify-content: center;
+    height: 70%;
+    width: 100%
+}
+
+div.imgLobo img {
+    position: relative;
+    top: 12%;
+    right: 24.5%;
+    width: 50%;
+    height: 80%;
+    min-width: 120px;
+    min-height: 180px;
+    z-index: 1;
+}
+
+div.buttonLobo {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-content: center;
+    gap: 1.5vmax;
+
+}
+
+div.buttonLobo button {
+    height: 6vh;
+    width: 10vw;
+}
+
+div.buttonLobo button:hover {
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+button.adote {
+    border: none;
+    background-color: rgb(122,172,58);
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+button.exclude {
+    border: none;
+    background-color: rgb(222,89,89);
+    color: rgb(255,255,255);
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+div.imgShadow {
+    position: relative;
+    border-color: rgba(51,51,51);
+    border-style: solid;
+    border-width: 0.3vmax;
+    background-color: rgb(44,86,128);
+    min-width: 120px;
+    min-height: 180px;
+    width: 49.5%;
+    height: 79%;
+    top: 2%;
+    left: 18.5%;
+}
+
+/*** FOOTER ***/
+
+/*** FOOTER ***/
+div.footer {
+    top: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+div.leftFooter {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    gap: 5vh;
+}
+
+iframe {
+    height: 25vh;
+}
+
+div.contato {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 3.5vh;
+    height: 25vh;
+    font-size: 1.1rem;
+}
+
+div.contato div {
+    width: 65vh;
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 1vmax;
+    align-items: center;
+}
+
+img#point {
+    width: 5%;
+    height: 50%;
+}
+
+img#telefone {
+    width: 4%;
+}
+
+img#carta {
+    width: 4%;
+    height: 80%;
+}
+
+div.contato button {
+    border: 0px;
+    background-color: rgba(222,185,89,255);
+    color: rgb(51, 51, 51);
+    font-size: 1.25rem;
+    height: 30%;
+    width: 36%;
+}
+
+div.desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    color: white;
+    font-size: 1.1rem;
+    justify-content: center;
+}
+
+div.desenvolvedor img {
+    width: 20vh;
+    height: 20vh;
+}
