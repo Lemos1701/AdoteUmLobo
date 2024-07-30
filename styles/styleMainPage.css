@@ -234,6 +234,7 @@ div.lobo1 img {
     left: 2.25vw;
     top: 4.5vh;
     width: 25vw;
+    min-height: 35vh;
     height: 35vh;
 }
 
@@ -256,6 +257,7 @@ div.backImage > div {
 
 div.lobo1Texto {
     width: 65vh;
+    height: 35vh;
 }
 
 div.lobo1Texto > div {
@@ -293,6 +295,7 @@ div.lobo2 img {
     right: 2.25vw;
     top: 4.5vh;
     width: 25vw;
+    min-height: 35vh;
     height: 35vh;
 }
 
@@ -315,6 +318,7 @@ div.backImage2 > div {
 
 div.lobo2Texto {
     width: 65vh;
+    height: 35vh;
 }
 div.lobo2Texto > div {
     display: flex;
