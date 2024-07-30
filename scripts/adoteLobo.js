@@ -4,6 +4,7 @@ let button_adote = document.querySelector(".btnAdopt");
 let id = localStorage.getItem("id");
 document.querySelector(".imgLobo").src = localStorage.getItem("imagem");
 document.querySelector("#beginTextTitle").innerHTML = "Adote o(a) " + localStorage.getItem("nome");
+document.querySelector("#beginTextLoboId").innerHTML = "ID:" + localStorage.getItem("id");
 
 let idNumber = Number(id);
 
