@@ -68,7 +68,6 @@ div.main {
 
 div.main div{
     text-align: center;
-
     height: 68%;
 }
 
@@ -137,10 +136,12 @@ img#carta {
     width: 4%;
     height: 80%;
 }
-
+div.contato a {
+    height: 30%;
+}
 div.contato button {
     border: 0px;
-    background-color: rgba(222,185,89,255);
+    background-color: rgb(222,185,89);
     color: rgb(51, 51, 51);
     font-size: 1.25rem;
     height: 30%;
