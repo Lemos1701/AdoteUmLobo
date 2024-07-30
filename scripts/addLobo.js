@@ -31,6 +31,7 @@ btnSave.addEventListener("click",()=>{
         inputYear.value = "";
         inputLink.value = "";
         textareaDescription.value = "";
+        alert("Seu lobo foi cadastrado com sucesso!")
     }
 })
 
