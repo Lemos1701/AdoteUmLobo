@@ -296,6 +296,10 @@ div.adoteLobo button:hover {
     transition: 0.5s;
 }
 
+div.displayNone {
+    display: none;
+}
+
 /*** FOOTER ***/
 
 /*** FOOTER ***/
