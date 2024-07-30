@@ -218,3 +218,14 @@ document.getElementById("search").addEventListener("keyup", function(event) {
   }
 })
 
+document.getElementById("adicionarLobo").addEventListener("click", function() {
+  window.location.href = "../html/addLoboPage.html";
+});
+
+document.getElementById("status0").addEventListener("click", function() {
+  localStorage.setItem("imagem", document.getElementById("imagem0").src)
+  localStorage.setItem("descricao", document.getElementById("desc0").innerHTML)
+  localStorage.setItem("idade", document.getElementById("idade0").innerHTML)
+  localStorage.setItem("nome", document.getElementById("nome0").innerHTML)
+  window.location.href = "../html/showLobinho.html"
+});
