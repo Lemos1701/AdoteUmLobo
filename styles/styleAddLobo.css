@@ -30,6 +30,14 @@
     padding-bottom: 18rem;
   }
 
+  footer{
+    border: 5px solid;
+    border-image: linear-gradient(to right,#d4b156, #305681) 1;
+    border-bottom: none;
+    border-right: none;
+    border-left:none;
+  }
+
   /******** BODY ********/
   
   /*** HEADER ***/
@@ -159,7 +167,7 @@ div.description{
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    height: 30vh;
+    height: 35vh;
     min-height: 30vh;
     width: 100%;
     background-color: rgb(51, 51, 51);
@@ -167,7 +175,7 @@ div.description{
 
 div.leftFooter {
     display: flex;
-    height: 30vh;
+    height: 35vh;
     align-items: center;
     gap: 5vh;
 }
