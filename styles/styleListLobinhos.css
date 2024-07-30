@@ -298,9 +298,11 @@ button.adotados {
     color: rgb(255, 255, 255);
     border: none;
     font-size: 1.25rem;
+    cursor: default;
 }
 
-div.adoteLobo button:hover {
+
+button.adotar:hover {
     opacity: 0.5;
     transition: 0.5s;
 }
