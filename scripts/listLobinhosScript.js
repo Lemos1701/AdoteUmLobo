@@ -14,6 +14,7 @@ function readData(number, status){
       document.getElementById("nome" + i).innerHTML = lobosFiltrados[number + i].nome
       document.getElementById("idade" + i).innerHTML = "Idade: "+lobosFiltrados[i + number].idade + " anos"
       document.getElementById("desc" + i).innerHTML = lobosFiltrados[number + i].descricao;
+      localStorage.setItem("id"+ i, lobosFiltrados[number + i].id)
       if(lobosFiltrados[number + i].adotado){
         document.getElementById("status" + i).className = "adotados"
         document.getElementById("status" + i).innerHTML = "Adotado"
@@ -80,6 +81,7 @@ function listaLobos(loboFiltrados, number){
       document.getElementById("nome" + i).innerHTML = loboFiltrados[number + i].nome
       document.getElementById("idade" + i).innerHTML = "Idade: "+loboFiltrados[i + number].idade + " anos"
       document.getElementById("desc" + i).innerHTML = loboFiltrados[number + i].descricao;
+      localStorage.setItem("id"+ i, loboFiltrados[number + i].id)
       if(loboFiltrados[number + i].adotado){
         document.getElementById("status" + i).className = "adotados"
         document.getElementById("status" + i).innerHTML = "Adotado"
@@ -172,6 +174,7 @@ document.getElementById("search").addEventListener("keyup", function(event) {
         document.getElementById("nome" + j).innerHTML = lobosFiltrados[j].nome;
         document.getElementById("idade" + j).innerHTML = "Idade: "+ lobosFiltrados[j].idade + " anos"
         document.getElementById("desc" + j).innerHTML = lobosFiltrados[j].descricao;
+        localStorage.setItem("id"+ j, lobosFiltrados[j].id)
         if(lobosFiltrados[j].adotado){
           document.getElementById("status" + j).className = "adotados"
           document.getElementById("status" + j).innerHTML = "Adotado"
@@ -227,5 +230,33 @@ document.getElementById("status0").addEventListener("click", function() {
   localStorage.setItem("descricao", document.getElementById("desc0").innerHTML)
   localStorage.setItem("idade", document.getElementById("idade0").innerHTML)
   localStorage.setItem("nome", document.getElementById("nome0").innerHTML)
+  localStorage.setItem("number", 0)
+  window.location.href = "../html/showLobinho.html"
+});
+
+document.getElementById("status1").addEventListener("click", function() {
+  localStorage.setItem("imagem", document.getElementById("imagem1").src)
+  localStorage.setItem("descricao", document.getElementById("desc1").innerHTML)
+  localStorage.setItem("idade", document.getElementById("idade1").innerHTML)
+  localStorage.setItem("nome", document.getElementById("nome1").innerHTML)
+  localStorage.setItem("number", 1)
+  window.location.href = "../html/showLobinho.html"
+});
+
+document.getElementById("status2").addEventListener("click", function() {
+  localStorage.setItem("imagem", document.getElementById("imagem2").src)
+  localStorage.setItem("descricao", document.getElementById("desc2").innerHTML)
+  localStorage.setItem("idade", document.getElementById("idade2").innerHTML)
+  localStorage.setItem("nome", document.getElementById("nome2").innerHTML)
+  localStorage.setItem("number", 2)
+  window.location.href = "../html/showLobinho.html"
+});
+
+document.getElementById("status3").addEventListener("click", function() {
+  localStorage.setItem("imagem", document.getElementById("imagem3").src)
+  localStorage.setItem("descricao", document.getElementById("desc3").innerHTML)
+  localStorage.setItem("idade", document.getElementById("idade3").innerHTML)
+  localStorage.setItem("nome", document.getElementById("nome3").innerHTML)
+  localStorage.setItem("number", 3)
   window.location.href = "../html/showLobinho.html"
 });
