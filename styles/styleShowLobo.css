@@ -36,6 +36,14 @@ main {
     flex-direction: column;
 }
 
+footer{
+    border: 5px solid;
+    border-image: linear-gradient(to right,#d4b156, #305681) 1;
+    border-bottom: none;
+    border-right: none;
+    border-left:none;
+  }
+
 /******** BODY ********/
 
 /*** HEADER ***/
