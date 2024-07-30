@@ -15,22 +15,19 @@ document.querySelector("#beginTextLoboId").innerHTML = "ID:" + localStorage.getI
 
 let idNumber = Number(id);
 
-function encontrarLoboPorId(id) {
-    return lobinhos.filter(lobo => lobo.id === id);
-}
 
 function cadastro() {
-    let loboEncontrado = encontrarLoboPorId(idNumber);
-    console.log(loboEncontrado);
-    loboEncontrado.nomeDono = document.querySelector("#inputName").value;
-    loboEncontrado.idadeDono = document.querySelector("#inputYear_old").value;
-    loboEncontrado.emailDono = document.querySelector("#inputEmail").value;
-    loboEncontrado.adotado = true;
+    const indice = lobinhos.findIndex(obj => obj.id == idNumber);
+    console.log(indice)
+    lobinhos[indice].nomeDono = document.querySelector("#inputName").value;
+    lobinhos[indice].idadeDono = document.querySelector("#inputYear_old").value;
+    lobinhos[indice].emailDono = document.querySelector("#inputEmail").value;
+    lobinhos[indice].adotado = true;
 
-    const objetoComoString = JSON.stringify(loboEncontrado);
+    const objetoComoString = JSON.stringify(lobinhos);
     localStorage.setItem("lobinhos", objetoComoString)
 
-    console.log(loboEncontrado);
+    console.log(lobinhos);
 }
 
 button_adote.addEventListener("click",()=>{
