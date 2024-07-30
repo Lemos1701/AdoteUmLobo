@@ -1,0 +1,291 @@
+/******** GLOBAL ********/
+.darker-grotesque {
+    font-family: "Darker Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+    body {
+      font-family: "Darker Grotesque", sans-serif;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      flex-direction: column;
+  }
+  
+  a {
+      text-decoration: none;
+      color: rgb(51, 51, 51);
+  }
+  
+button:hover {
+    cursor: pointer;
+}
+main{
+  width:78%;
+  height: 70vh;
+  padding: 11.5rem;
+  padding-left: 8.5rem;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+  
+  /*** HEADER ***/
+  
+  div.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: rgb( 133, 205, 245);
+
+}
+
+div.header img {
+    position: relative;
+    width: 5%;
+    height: 90%;
+
+}
+
+div.header div {
+    flex-direction: column;
+    position: relative;
+    height: auto;
+    top: 16%;
+}
+
+div.header hr {
+    position: relative;
+    width: 65%;
+    left: 20%;
+    bottom: 1vh;
+    height: 0.45vh;
+    background-color: rgb(51, 51, 51);
+    border: 0px;
+    border-radius: 40px;
+}
+
+
+/*** MAIN ***/
+div.divMain{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5em;
+    gap: 3em;
+    width: 100%;
+    height: 100vh;
+}
+  
+    /*** ---begin--- ***/
+
+  div.divMain{
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 5em;
+    padding-left: 6em;
+    width: 100%;
+    gap: 3em;
+  }
+
+  div.begin{
+    display: flex;
+    align-items: center ;
+    
+  }
+
+  img.imgLobo{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    max-width: 100%;
+    border-radius: 100%;
+  }
+
+  div.beginText{
+    margin-left: 5%;
+    position: relative;
+    bottom:20%;
+  }
+
+  #beginTextTitle{
+    font-size: 60px;
+  }
+
+  #beginTextLoboId{
+    font-size: 14px;
+    margin-top: 1.5em;
+  }
+  
+  
+  /*** ---Midle--- ***/
+  
+  div.person{
+    display: flex;
+    gap: 1em;
+    height: 60%;
+    align-items: center;
+  }
+
+  div.personName{
+    width: 85%;
+    height: 100%;
+  }
+
+  #labelName,#labelYear_old,#labelEmail{
+    font-size: 18px;
+  }
+
+  #inputName{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 70%;
+  }
+
+  div.personYear_old{
+    width: 10%;
+    height: 100%;
+  }
+
+  #inputYear_old{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 50%;
+    height: 70%;
+  }
+  div.email{
+    width: 91.5%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  #labelEmail{
+    align-self: flex-start;
+  }
+
+  #inputEmail{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    height: 70%;
+  }
+
+  button.btnAdopt{
+    background-color: rgb(58, 90, 123);
+    border: 1px solid black;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    width: 15%;
+    height: 30%;
+    align-self: center;
+    position: relative;
+    right: 3.8%;
+  }
+
+
+
+
+
+  
+  
+  
+  /*** FOOTER ***/
+  
+  div.footer {
+    top: 60%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30vh;
+    min-height: 30vh;
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+}
+
+div.leftFooter {
+    display: flex;
+    height: 30vh;
+    align-items: center;
+    gap: 5vh;
+}
+
+iframe {
+    height: 25vh;
+}
+
+div.contato {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 3.5vh;
+    height: 25vh;
+    font-size: 1.1rem;
+}
+
+div.contato div {
+    width: 55vh;
+    display: flex;
+    flex-flow: nowrap row;
+    gap: 1vmax;
+    align-items: center;
+}
+
+img#point {
+    width: 5%;
+    height: 50%;
+}
+
+img#telefone {
+    width: 4%;
+}
+
+img#carta {
+    width: 4%;
+    height: 80%;
+}
+
+div.contato button {
+    border: 0px;
+    background-color: rgb(222,185,89);
+    color: rgb(51, 51, 51);
+    font-size: 1.25rem;
+    height: 30%;
+    width: 36%;
+}
+
+div.desenvolvedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+    justify-content: center;
+}
+
+div.desenvolvedor img {
+    width: 20vh;
+    height: 20vh;
+}
+
+  
+ 
+  
