@@ -1,38 +1,30 @@
-async function readData(number, status){
-  var arq = null
-  await fetch('../data/lobinhos.json')
-    .then(response => response.json())
-      .then(data => {
-        console.log(data)
-        arq = data
-        if (status) {
-          lobosFiltrados = data.filter((lobo) => {return lobo.adotado});
-        } else {
-          lobosFiltrados = data.filter((lobo) => {return !lobo.adotado});
-        }
-        console.log(lobosFiltrados);
-    
-        for (let i = 0; i < 4; i++) {
-          if (lobosFiltrados[number + i]) {
-            document.getElementById("lobo" + i).className = "loboDiv"
-            document.getElementById("imagem" + i).src = lobosFiltrados[number + i].imagem
-            document.getElementById("nome" + i).innerHTML = lobosFiltrados[number + i].nome
-            document.getElementById("idade" + i).innerHTML = "Idade: "+lobosFiltrados[i + number].idade + " anos"
-            document.getElementById("desc" + i).innerHTML = lobosFiltrados[number + i].descricao;
-          } else {
-            document.getElementById("lobo" + i).className = "displayNone"
-          }
-      }
-      })
-      .catch(error => console.error('Erro ao carregar o arquivo JSON:', error));
-    console.log(arq)  
-    return arq
+function readData(number, status){
+  if (status) {
+    lobosFiltrados = lobinhos.filter((lobo) => {return lobo.adotado});
+  } else {
+    lobosFiltrados = lobinhos.filter((lobo) => {return !lobo.adotado});
+  }
+  console.log(lobosFiltrados);
+  for (let i = 0; i < 4; i++) {
+    if (lobosFiltrados[number + i]) {
+      document.getElementById("lobo" + i).className = "loboDiv"
+      document.getElementById("imagem" + i).src = lobosFiltrados[number + i].imagem
+      document.getElementById("nome" + i).innerHTML = lobosFiltrados[number + i].nome
+      document.getElementById("idade" + i).innerHTML = "Idade: "+lobosFiltrados[i + number].idade + " anos"
+      document.getElementById("desc" + i).innerHTML = lobosFiltrados[number + i].descricao;
+    } else {
+      document.getElementById("lobo" + i).className = "displayNone"
+    }
+  }
+  
+  return lobosFiltrados.length
 }
 
 var num = 0
 var actual = 1
 var adotados = false
-readData(num, adotados)
+let maximo = readData(num, adotados)
+console.log(maximo)
 
 document.getElementById("adoptCheckbox").addEventListener("change", function() {
 
@@ -56,17 +48,21 @@ document.getElementById("adoptCheckbox").addEventListener("change", function() {
 })
 
 document.getElementById("next").addEventListener("click", function(){
-  num += 4
-  actual += 1
-  readData(num, adotados)
-  console.log(num)
+  if(num < maximo-4){
+    num += 4
+    actual += 1
+    maximo = readData(num, adotados)
+    console.log(num)
+  }
 })
 
 document.getElementById("previous").addEventListener("click", function(){
-  num -= 4
-  actual -= 1
-  readData(num, adotados)
-  console.log(num)
+  if(num > 0){
+    num -= 4
+    actual -= 1
+    maximo = readData(num, adotados)
+    console.log(num)
+  }
 })
 
 /*document.getElementById("search").addEventListener("keyup", function(event) {
