@@ -8,3 +8,7 @@ document.getElementById("adote").addEventListener("click", function() {
     localStorage.setItem("id", localStorage.getItem("id"+idNum))
     window.location.href = "../html/adoteLobo.html"
 });
+
+document.getElementById("exclude").addEventListener("click", function() {
+    window.location.href = "../html/listLobinhos.html"
+})
