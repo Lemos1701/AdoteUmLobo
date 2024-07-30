@@ -13,6 +13,8 @@ if (listaLobos) {
     console.log(lobinhos);
 }
 
+localStorage.setItem("idMin", 1000)
+
 console.log(lobinhos)
 let newLobo1 = lobinhos[getRandomInt(1, 1000) - 1];
 let newLobo2 = lobinhos[getRandomInt(1, 1000) - 1];
