@@ -14,15 +14,13 @@ async function readData(number, status){
     
         for (let i = 0; i < 4; i++) {
           if (lobosFiltrados[number + i]) {
-            document.getElementById("imagem" + i).src = lobosFiltrados[number + i].imagem;
-            document.getElementById("nome" + i).innerHTML = lobosFiltrados[number + i].nome;
+            document.getElementById("lobo" + i).className = "loboDiv"
+            document.getElementById("imagem" + i).src = lobosFiltrados[number + i].imagem
+            document.getElementById("nome" + i).innerHTML = lobosFiltrados[number + i].nome
             document.getElementById("idade" + i).innerHTML = "Idade: "+lobosFiltrados[i + number].idade + " anos"
             document.getElementById("desc" + i).innerHTML = lobosFiltrados[number + i].descricao;
           } else {
-            document.getElementById("imagem" + i).src = '';
-            document.getElementById("nome" + i).innerHTML = '';
-            document.getElementById("idade" + i).innerHTML = '';
-            document.getElementById("desc" + i).innerHTML = '';
+            document.getElementById("lobo" + i).className = "displayNone"
           }
       }
       })
@@ -32,31 +30,46 @@ async function readData(number, status){
 }
 
 var num = 0
+var actual = 1
+var adotados = false
+readData(num, adotados)
 
 document.getElementById("adoptCheckbox").addEventListener("change", function() {
 
-  adotados = this.checked;
+  adotados = this.checked
   num = 0; // Reinicia o contador para começar do início da nova lista
   actual = 1; // Reinicia a página atual
   if(adotados){
       for(let i = 0; i < 4; i++){
-          document.getElementById("status" + i).className = "adotados";
-          document.getElementById("status" + i).innerHTML = "Adotado";
+          document.getElementById("status" + i).className = "adotados"
+          document.getElementById("status" + i).innerHTML = "Adotado"
       }
   }
   else{
       for(let i = 0; i < 4; i++){
-          document.getElementById("status" + i).className = "adotar";
-          document.getElementById("status" + i).innerHTML = "Adotar";
+          document.getElementById("status" + i).className = "adotar"
+          document.getElementById("status" + i).innerHTML = "Adotar"
       }
   }
   readData(num, adotados)
   console.log(num)
-});
+})
 
+document.getElementById("next").addEventListener("click", function(){
+  num += 4
+  actual += 1
+  readData(num, adotados)
+  console.log(num)
+})
 
-/*
-document.getElementById("search").addEventListener("keyup", function(event) {
+document.getElementById("previous").addEventListener("click", function(){
+  num -= 4
+  actual -= 1
+  readData(num, adotados)
+  console.log(num)
+})
+
+/*document.getElementById("search").addEventListener("keyup", function(event) {
   if (event.key === "Enter") {
       const query = event.target.value.toLowerCase();
       const loboEncontrado = lobos.find(lobo => lobo.nome.toLowerCase() === query);
