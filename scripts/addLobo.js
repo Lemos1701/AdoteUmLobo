@@ -1,7 +1,6 @@
 const objeto = lobinhos;
 let btnSave = document.querySelector(".btnSave");
-let nome = document.querySelector("#inputName").value;
-console.log(nome)
+console.log(objeto);
 
 function addlobo(){
     let nome = document.querySelector("#inputName").value;
@@ -34,3 +33,5 @@ btnSave.addEventListener("click",()=>{
         textareaDescription.value = "";
     }
 })
+
+console.log(objeto);

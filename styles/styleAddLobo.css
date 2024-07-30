@@ -143,6 +143,9 @@ div.description{
 
 }
 
+.btnSave:hover{
+    background-color: rgb(68, 114, 160);
+}
 
 
 
