@@ -300,6 +300,18 @@ div.displayNone {
     display: none;
 }
 
+button.numButton {
+    border: none;
+    background: none;
+    height: 2vh;
+    font-size: 2vh;
+    display: inline-flex;
+}
+
+span {
+    font-size: 2vh;
+}
+
 /*** FOOTER ***/
 
 /*** FOOTER ***/
