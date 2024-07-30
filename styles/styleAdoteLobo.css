@@ -23,10 +23,11 @@ button:hover {
     cursor: pointer;
 }
 main{
-  width:78%;
+  width:70%;
+  max-width: 70%;
   height: 70vh;
-  padding: 11.5rem;
-  padding-left: 8.5rem;
+  padding: 11rem;
+  padding-left: 10rem;
   padding-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -198,6 +199,10 @@ div.divMain{
     align-self: center;
     position: relative;
     right: 3.8%;
+  }
+  
+  .btnAdopt:hover{
+    background-color: rgb(68, 114, 160);
   }
 
 
