@@ -42,4 +42,5 @@ button_adote.addEventListener("click",()=>{
         inputYear_old.value = "";
         inputEmail.value = "";
     }
+    window.location.href = "../html/listLobinhos.html"
 });
