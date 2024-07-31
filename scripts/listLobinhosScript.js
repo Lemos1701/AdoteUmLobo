@@ -48,6 +48,7 @@ function readData(number, status){
     document.getElementById("next").innerHTML = actual + 1
     document.getElementById("previous").innerHTML = actual - 1
   }
+  document.getElementById("actual").innerHTML = actual
 
   
   return lobosFiltrados.length
@@ -116,6 +117,7 @@ function listaLobos(loboFiltrados, number){
     document.getElementById("next").innerHTML = actual + 1
     document.getElementById("previous").innerHTML = actual - 1
   }
+  document.getElementById("actual").innerHTML = actual
   return loboFiltrados.length
 }
 
