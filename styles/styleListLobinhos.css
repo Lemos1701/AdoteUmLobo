@@ -230,6 +230,7 @@ div.loboEspecs {
     display:flex;
     flex-flow: wrap column;
     justify-content: space-evenly;
+    align-content: flex-start;
 }
 
 div.loboEspecsReversed {
@@ -238,6 +239,7 @@ div.loboEspecsReversed {
     display:flex;
     flex-flow: wrap column;
     justify-content: space-evenly;
+    align-content: flex-end;
 }
 
 div.loboEspecsReversed > p {
@@ -279,7 +281,7 @@ div.adoteLobo {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 button.adotar {
@@ -321,6 +323,10 @@ button.numButton {
 
 span {
     font-size: 2vh;
+}
+
+p.descricao {
+    width: 70%;
 }
 
 /*** FOOTER ***/
