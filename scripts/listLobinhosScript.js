@@ -127,9 +127,22 @@ document.getElementById("next").addEventListener("click", function(){
     maximo = listaLobos(lobosFiltrados, num)
     console.log(num)
   }
-  document.getElementById("next").innerHTML = actual+1
-  document.getElementById("previous").innerHTML = actual-1
   document.getElementById("actual").innerHTML = actual
+  
+  let tamanhoMaxActual= lobosFiltrados.length / 4
+  if(actual<=1 && actual>=tamanhoMaxActual){
+    document.getElementById("next").innerHTML = ""
+    document.getElementById("previous").innerHTML = ""
+  } else if (actual<=1){
+    document.getElementById("previous").innerHTML = ""
+    document.getElementById("next").innerHTML = actual + 1
+  } else if(actual>=tamanhoMaxActual) {
+    document.getElementById("next").innerHTML = ""
+    document.getElementById("previous").innerHTML = actual - 1
+  } else {
+    document.getElementById("next").innerHTML = actual + 1
+    document.getElementById("previous").innerHTML = actual - 1
+  }
 })
 
 document.getElementById("previous").addEventListener("click", function(){
@@ -139,9 +152,22 @@ document.getElementById("previous").addEventListener("click", function(){
     maximo = listaLobos(lobosFiltrados, num)
     console.log(num)
   }
-  document.getElementById("next").innerHTML = actual+1
-  document.getElementById("previous").innerHTML = actual-1
   document.getElementById("actual").innerHTML = actual
+
+  let tamanhoMaxActual= lobosFiltrados.length / 4
+  if(actual<=1 && actual>=tamanhoMaxActual){
+    document.getElementById("next").innerHTML = ""
+    document.getElementById("previous").innerHTML = ""
+  } else if (actual<=1){
+    document.getElementById("previous").innerHTML = ""
+    document.getElementById("next").innerHTML = actual + 1
+  } else if(actual>=tamanhoMaxActual) {
+    document.getElementById("next").innerHTML = ""
+    document.getElementById("previous").innerHTML = actual - 1
+  } else {
+    document.getElementById("next").innerHTML = actual + 1
+    document.getElementById("previous").innerHTML = actual - 1
+  }
 })
 
 //filtro das strings
@@ -202,7 +228,7 @@ document.getElementById("search").addEventListener("keyup", function(event) {
         document.getElementById("lobo" + i).className = "displayNone"
       }
     }
-
+    console.log("something")
   
 
     let tamanhoMaxActual= lobosFiltrados.length / 4
@@ -213,15 +239,15 @@ document.getElementById("search").addEventListener("keyup", function(event) {
     } else if (actual<=1){
       document.getElementById("previous").innerHTML = ""
       document.getElementById("next").innerHTML = actual + 1
+      console.log("salve")
     } else if(actual>=tamanhoMaxActual) {
       document.getElementById("next").innerHTML = ""
       document.getElementById("previous").innerHTML = actual - 1
     } else {
       document.getElementById("next").innerHTML = actual + 1
       document.getElementById("previous").innerHTML = actual - 1
+      console.log("actual = "+ actual)
     }
-    document.getElementById("next").innerHTML = actual+1
-    document.getElementById("previous").innerHTML = actual-1
     document.getElementById("actual").innerHTML = actual
     console.log("num = "+num)
     console.log("tamanho = " + lobosFiltrados.length)
